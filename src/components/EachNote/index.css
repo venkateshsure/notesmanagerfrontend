@@ -1,0 +1,78 @@
+
+.todo-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    border-radius: 5px;
+
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; 
+  }
+  
+  .label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%; 
+  }
+  
+  .checkbox-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .note-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .note-category {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .delete-update-con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 20%; 
+    height: 100%;
+  }
+  
+  .delete-icon-container {
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  .delete-icon {
+    font-size: 1.5rem;
+    color: #f44336;
+  }
+  
+  .delete-icon:hover {
+    color: #d32f2f;
+  }
+  
+  .checkbox-input {
+    margin-right: 15px;
+  }
+  
+  .checked{
+    text-decoration: line-through;
+  }
+
+  .notChecked{
+    text-decoration: none;
+  }

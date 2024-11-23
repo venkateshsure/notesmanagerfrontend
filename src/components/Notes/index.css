@@ -1,0 +1,170 @@
+.con{
+    height:100vh;
+    flex:1;
+}
+
+
+.todos-bg-container {
+    background: linear-gradient(to right, #f7c5f1, #c0c0ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;;
+}
+
+.con {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todos-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.todo-user-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+
+.todo-items-container {
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   /* overflow-y: scroll; */
+}
+
+.no-todos {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #777;
+}
+
+
+.search-con {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-search {
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.checkbox-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.delete-update-con {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.delete-icon-container {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    font-size: 1.5rem;
+    color: #f44336;
+}
+
+.delete-icon:hover {
+    color: #d32f2f;
+}
+
+.checkbox-input {
+    margin-right: 15px;
+}
+
+
+.todo-select-con {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.todo-select-con label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+select:focus {
+    border-color: #4caf50;
+    background-color: #f1f8f1;
+    outline: none;
+}
+
+select option {
+    padding: 10px;
+    font-size: 1rem;
+}

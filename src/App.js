@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes,BrowserRouter,Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Notes from './components/Notes';
+import CreateNotes from './components/CreateNotes'
+import UpdateNotes from './components/UpdateNotes'
+import DeleteNotes from './components/DeleteNotes'
 
-export default App;
+import './App.css'
+
+const App=()=>(
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Notes/>} />
+            <Route path="createNote" element={<CreateNotes />}/>
+            <Route path="updateNote/:id" element={<UpdateNotes />}/>
+            <Route path="deleteNote/:id" element={<DeleteNotes />}/>
+        </Routes>
+    </BrowserRouter>
+)
+
+export default App
