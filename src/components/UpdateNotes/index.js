@@ -46,7 +46,7 @@ const UpdateNote = () => {
         if (response.ok) {
             // Show success notification
             toast.success('Note updated successfully!');
-           // navigate('/');
+           navigate('/');
         } else {
             // Show error notification
             toast.error('Failed to update note.');
