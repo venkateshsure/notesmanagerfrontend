@@ -15,7 +15,7 @@ const EachNote = (props) => {
 
   const onChangeCheckbox = async (event) => {
     try {
-      const response = await fetch(`https://notes-manager-c0tj.onrender.com/notes/toggle/${id}`, {
+      const response = await fetch(`http://localhost:4000/notes/toggle/${id}`, {
         method: 'PUT', 
       });
 

@@ -9,7 +9,7 @@ const DeleteNotes = () => {
 
     useEffect(() => {
         const onDeleteNote = async () => {
-            let deleteUrl = `https://notes-manager-c0tj.onrender.com/notes/${id}`;
+            let deleteUrl = `http://localhost:4000/notes/${id}`;
             let deleteOptions = {
                 method: 'DELETE',
                 headers: {
