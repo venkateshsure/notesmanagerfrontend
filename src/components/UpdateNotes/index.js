@@ -13,7 +13,7 @@ const UpdateNote = () => {
 
     useEffect(() => {
         const fetchNote = async () => {
-            const response = await fetch(`http://localhost:4000/notes/${id}`);
+            const response = await fetch(`https://notes-manager-c0tj.onrender.com/notes/${id}`);
             const data = await response.json();
             console.log("data from update ", data);
             if (data) {
@@ -35,7 +35,7 @@ const UpdateNote = () => {
             category,
         };
 
-        const response = await fetch(`http://localhost:4000/notes/${id}`, {
+        const response = await fetch(`https://notes-manager-c0tj.onrender.com/notes/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

@@ -21,7 +21,7 @@ const Notes = () => {
 
     useEffect(() => {
         const fetchNotes = async () => {
-            let url = "http://localhost:4000/notes";
+            let url = "https://notes-manager-c0tj.onrender.com/notes";
             let options = {
                 method: 'GET',
                 headers: { "Content-Type": "application/json" },
@@ -50,7 +50,7 @@ const Notes = () => {
             category,
         };
     
-        let url = "http://localhost:4000/notes";
+        let url = "https://notes-manager-c0tj.onrender.com/notes";
         let options = {
             method: 'POST',
             body: JSON.stringify(newNote),
@@ -63,7 +63,7 @@ const Notes = () => {
             const responseText = await response.text();
             if (response.ok) {
                 // After adding the note, fetch the notes again from the backend
-                const fetchResponse = await fetch("http://localhost:4000/notes");
+                const fetchResponse = await fetch("https://notes-manager-c0tj.onrender.com/notes");
                 const data = await fetchResponse.json();
                 setNotes(data);  // Update notes state with the latest data
                 setTitle("");
@@ -80,7 +80,7 @@ const Notes = () => {
 
 
     const onSearchNotes = async () => {
-        let url = `http://localhost:4000/notes?title=${searchInput}`;
+        let url = `https://notes-manager-c0tj.onrender.com/notes?title=${searchInput}`;
         let options = {
             method: 'GET',
             headers: { "Content-Type": "application/json" },
